@@ -1,0 +1,26 @@
+{
+  "name": "Climate Egypt Africa",
+  "short_name": "CEA",
+  "description": "Empowering the next generation of climate leaders across Africa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00695C",
+  "icons": [
+    {
+      "src": "Favicon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "Favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "Favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
