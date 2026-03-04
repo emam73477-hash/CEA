@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://climateegyptafrica.netlify.app/sitemap.xml
+Sitemap: https://climateegyptafrica1.onrender.com/sitemap.xml
