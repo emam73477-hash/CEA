@@ -14,6 +14,18 @@
     <!-- 3. SEO Description for Google -->
     <meta name="description" content="Climate Egypt Africa (CEA) leads climate innovation and environmental awareness across Egypt and the African continent.">
     <meta name="keywords" content="CEA, Climate Egypt Africa, Climate Change Egypt, Africa Environmental">
+    <!-- ربط ملف المانيفست -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00695C">
+
+<!-- كود تسجيل الـ Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js');
+    });
+  }
+</script>
     
     <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cairo:wght@600&display=swap" rel="stylesheet">
@@ -321,6 +333,7 @@
 </body>
 
 </html>
+
 
 
 
