@@ -14,11 +14,10 @@
     <!-- 3. SEO Description for Google -->
     <meta name="description" content="Climate Egypt Africa (CEA) leads climate innovation and environmental awareness across Egypt and the African continent.">
     <meta name="keywords" content="CEA, Climate Egypt Africa, Climate Change Egypt, Africa Environmental">
-    <!-- ربط ملف المانيفست -->
+    
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#00695C">
 
-<!-- كود تسجيل الـ Service Worker -->
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -27,7 +26,6 @@
   }
 </script>
     
-    <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -51,7 +49,6 @@
 
         .hidden { display: none !important; }
 
-        /* Navigation */
         nav {
             background: white;
             padding: 15px 5%;
@@ -63,10 +60,9 @@
             top: 0;
             z-index: 1000;
         }
-        .logo { font-weight: 700; color: var(--nile-teal); font-size: 1.5rem; text-decoration: none; }
+        .logo { font-weight: 700; color: var(--n Nile-teal); font-size: 1.5rem; text-decoration: none; }
         .logo span { color: var(--egyptian-gold); }
 
-        /* Header & Hero */
         header {
             background: linear-gradient(rgba(0,105,92, 0.8), rgba(44,62,80, 0.8)), url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
@@ -103,12 +99,11 @@
 
         .btn-action:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(46, 204, 113, 0.5); background: #27ae60; }
         
-        /* Main Cards */
         main { padding: 40px 5%; max-width: 1200px; margin: auto; }
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-top: -120px; 
         }
@@ -128,11 +123,9 @@
         .card img { width: 100%; height: 200px; object-fit: cover; }
         .card h3 { padding: 20px; color: var(--nile-teal); margin: 0; }
 
-        /* Sections */
         .section { background: white; padding: 60px 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .backBtn { background: var(--deep-earth); color: white; padding: 12px 25px; border: none; border-radius: 50px; cursor: pointer; margin-bottom: 30px; font-weight: bold; }
 
-        /* The New Google Form Section */
         .join-us-box {
             background: linear-gradient(135deg, var(--nile-teal), var(--deep-earth));
             color: white;
@@ -144,21 +137,6 @@
             overflow: hidden;
         }
 
-        .join-us-box::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .join-us-box h2 { font-size: 2.5rem; margin-bottom: 20px; }
-        .join-us-box p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
-
-        /* Team Section */
         .team { margin: 80px 0; text-align: center; }
         .team-grid {
             display: grid;
@@ -167,20 +145,14 @@
             margin-top: 40px;
         }
         .member { background: white; padding: 25px; border-radius: 15px; border-top: 5px solid var(--egyptian-gold); transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .member h3 { font-size: 1rem; margin-bottom: 5px; }
-        .member p { font-size: 0.8rem; color: var(--nile-teal); font-weight: bold; margin: 0; }
 
-        /* Video Modal */
         .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); }
         .modal-content { position: relative; margin: 10vh auto; width: 90%; max-width: 800px; }
         .close { position: absolute; top: -50px; right: 0; color: white; font-size: 40px; cursor: pointer; }
-        video { width: 100%; border-radius: 15px; box-shadow: 0 0 30px var(--egyptian-gold); }
+        video { width: 100%; border-radius: 15px; }
 
-        /* Footer */
         footer { background: var(--deep-earth); color: #cbd5e0; padding: 60px 5%; text-align: center; }
-        footer h4 { color: white; margin-bottom: 20px; }
         .social-links a { color: var(--egyptian-gold); font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
-        .social-links a:hover { color: var(--nature-green); }
 
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         .fade-in { animation: fadeInUp 0.8s ease-out forwards; }
@@ -193,19 +165,25 @@
       <a href="https://form.typeform.com/to/s7beEkdj" target="_blank" class="btn-action" style="padding: 10px 25px; font-size: 0.9rem;">APPLY NOW</a>
   </nav>
 
-  <!-- Header -->
   <header>
     <h1 class="fade-in">Climate Egypt Africa</h1>
     <p class="fade-in">Empowering the next generation of climate leaders through innovation, education, and regional action across Africa.</p>
     <div class="fade-in" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-        <a href="#join" class="btn-action btn-gold" style="background: var(--egyptian-gold);">Join the Organization</a>
-        <a href="https://chat.whatsapp.com/HfdlDCkkdntLuQUUwLO9vo?mode=r_t" target="_blank" class="btn-action" style="background: #25D366;"><i class="fab fa-whatsapp me-2"></i> WhatsApp Community</a>
+        <a href="#join" class="btn-action" style="background: var(--egyptian-gold);">Join Organization</a>
+        <!-- إضافة زر الميثاق هنا -->
+        <a href="THE OFFICIAL GLOBAL CHARTER (1).pdf" target="_blank" class="btn-action" style="background: white; color: var(--nile-teal);">
+            <i class="fas fa-file-contract me-2"></i> Global Charter
+        </a>
     </div>
   </header>
 
   <main>
-    <!-- Home Cards -->
     <section id="homeCards" class="cards">
+      <!-- إضافة بطاقة الميثاق كأول بطاقة -->
+      <div class="card" data-card="Charter">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=60" alt="Charter">
+        <h3>Global Charter</h3>
+      </div>
       <div class="card" data-card="Competitions">
         <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=60" alt="Competitions">
         <h3>Competitions</h3>
@@ -214,22 +192,28 @@
         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60" alt="Workshops">
         <h3>Workshops</h3>
       </div>
-      <div class="card" data-card="Events">
-        <img src="data:image/png;base64,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" alt="Events">
-        <h3>Events</h3>
-      </div>
       <div class="card" data-card="Videos">
         <img src="https://images.unsplash.com/photo-1492539161849-b2b18e79c85f?auto=format&fit=crop&w=500&q=60" alt="Videos">
         <h3>Awareness Media</h3>
       </div>
     </section>
 
-    <!-- Detailed Sections (Hidden) -->
+    <!-- Charter Section Content -->
+    <section id="charterSection" class="section hidden">
+      <button class="backBtn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Home</button>
+      <h2>The Official Global Charter</h2>
+      <p>Discover our core values, mission, and the strategic framework we use to combat climate change in Egypt and Africa.</p>
+      <br>
+      <a href="THE OFFICIAL GLOBAL CHARTER (1).pdf" target="_blank" class="btn-action">
+          <i class="fas fa-file-pdf me-2"></i> Read Full Charter (PDF)
+      </a>
+    </section>
+
     <section id="competitionsSection" class="section hidden">
       <button class="backBtn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Home</button>
       <h2>Climate Competitions</h2>
       <p>Challenge yourself to solve environmental issues and win support for your green projects.</p>
-      <a href="CEA competition.pdf" target="_blank" class="btn-action">Download Competition Guide (PDF)</a>
+      <a href="CEA competition.pdf" target="_blank" class="btn-action">Download Guide (PDF)</a>
     </section>
 
     <section id="videosSection" class="section hidden">
@@ -240,61 +224,44 @@
               <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=60" alt="Video">
               <h3>Awareness Clip 1</h3>
           </div>
-          <div class="card" style="width: 300px;" onclick="openVideo('CEA1.mp4')">
-              <img src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=500&q=60" alt="Video">
-              <h3>Awareness Clip 2</h3>
-          </div>
       </div>
     </section>
 
-    <!-- NEW Google Form Integration Section -->
     <section class="join-us-box fade-in" id="join">
         <h2>Ready to make an impact?</h2>
         <p>Whether you want to solve climate problems, organize events, or become a regional ambassador, your journey starts here.</p>
-        <a href="https://form.typeform.com/to/s7beEkdj" target="_blank" class="btn-action btn-gold">
-            <i class="fas fa-edit me-2"></i> FILL THE APPLICATION FORM
+        <a href="https://form.typeform.com/to/s7beEkdj" target="_blank" class="btn-action" style="background: var(--egyptian-gold);">
+            <i class="fas fa-edit me-2"></i> FILL APPLICATION FORM
         </a>
     </section>
 
-    <!-- Leadership Team -->
     <section class="team fade-in">
         <h2 style="color: var(--nile-teal);">Leadership Team</h2>
         <div class="team-grid">
           <div class="member"><h3>Mohamed Ahmed Emam</h3><p>Founder & President</p></div>
-
         </div>
     </section>
   </main>
 
-  <!-- Video Modal -->
   <div id="videoModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeVideo()">&times;</span>
-      <video id="mainVideoPlayer" controls>
-        <source src="" type="video/mp4">
-      </video>
+      <video id="mainVideoPlayer" controls><source src="" type="video/mp4"></video>
     </div>
   </div>
 
   <footer>
-    <div class="social-links mb-4">
+    <div class="social-links">
         <a href="https://chat.whatsapp.com/HfdlDCkkdntLuQUUwLO9vo?mode=r_t" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.facebook.com/profile.php?id=61578381241874"><i class="fab fa-facebook"></i></a>
         <a href="https://www.linkedin.com/company/cliamte-egypt-africa/"><i class="fab fa-linkedin"></i></a>
-
-
-
-
-
     </div>
     <h4>Climate Egypt Africa (CEA)</h4>
-    <p><i class="fas fa-envelope me-2"></i> climateegyptafrica@gmail.com</p>
-    <p><i class="fas fa-phone me-2"></i> +20 155 579 8612</p>
-    <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">© 2025 CEA Organization. Founded by Mohamed Ahmed Emam Elsayed.</p>
+    <p>climateegyptafrica@gmail.com</p>
+    <p>© 2025 CEA Organization. Founded by Mohamed Ahmed Emam Elsayed.</p>
   </footer>
 
   <script>
-    // Navigation logic
     document.querySelectorAll(".card[data-card]").forEach(card => {
         card.addEventListener("click", () => {
             const id = card.getAttribute("data-card").toLowerCase() + "Section";
@@ -312,7 +279,6 @@
         document.getElementById("homeCards").classList.remove("hidden");
     }
 
-    // Video Logic
     function openVideo(src) {
         const modal = document.getElementById("videoModal");
         const player = document.getElementById("mainVideoPlayer");
@@ -327,13 +293,9 @@
         modal.style.display = "none";
         player.pause();
     }
-
-    window.onclick = (e) => { if(e.target == document.getElementById("videoModal")) closeVideo(); }
   </script>
 </body>
-
 </html>
-
 
 
 
